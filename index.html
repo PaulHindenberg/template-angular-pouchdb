@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vo:ce</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!--[if IE 6]>
+    <style type="text/css">
+        html { overflow-y: hidden; }
+        body { overflow-y: auto; }
+        img#bg { position:absolute; z-index:-1; }
+        #content { position:static; }
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+
+<div ui-view></div>
+
+<!-- angularjs js -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>-->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular-ui-router.min.js"></script>
+
+<!-- cordova script (this will be a 404 during development) -->
+<script src="//cdn.jsdelivr.net/pouchdb/2.2.3/pouchdb.min.js"></script>
+
+<!-- your app's js -->
+<script src="app.js"></script>
+<script src="bootstrap.js"></script>
+<script src="router.js"></script>
+<!--<script src="js/controller/controllers.js"></script>-->
+<script src="config/ConfigService.js"></script>
+<script src="states/main/MainCtrl.js"></script>
+<script src="states/main/MainService.js"></script>
+<script src="states/login/LoginCtrl.js"></script>
+<script src="states/login/LoginService.js"></script>
+<script src="pouch/pouchWrapper.js"></script>
+
+
+</body>
+
+
+
+</html>
